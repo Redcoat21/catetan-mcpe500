@@ -13,49 +13,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Welcome.md",
+                "file": "Software Evolution/Software Evolution.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "fed240df86e430bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "676557c459d7f774",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software Testing/Minggu 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "6e862790c11e91a5",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0dd891fcf35262dd",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
             }
           }
         ]
@@ -124,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software Testing/Minggu 2.md",
+                "file": "Software Evolution/Software Evolution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software Testing/Minggu 2.md",
+                "file": "Software Evolution/Software Evolution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software Testing/Minggu 2.md"
+                "file": "Software Evolution/Software Evolution.md"
               }
             }
           }
@@ -185,11 +146,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "25c68317936f0063",
+  "active": "92715c1ef6933f7c",
   "lastOpenFiles": [
+    "Welcome.md",
     "Untitled.md",
+    "Software Testing/Software Testing.md",
+    "Software Evolution/Software Evolution.md",
+    "Artificial Intelligence/Artificial Intelligence.md",
     "Software Testing/Minggu 2.md",
-    "Software Testing",
-    "Welcome.md"
+    "Software Testing"
   ]
 }

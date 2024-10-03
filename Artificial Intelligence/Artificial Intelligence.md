@@ -59,3 +59,27 @@
   - Contoh : Self driving car.
 - Self-Aware AI
   - Merupakan mesin yang memiliki _consciusness_ atau kesadaran mereka sendiri.
+
+# Pertemuan 2, 3 Oktober 2024
+
+## State Space Representation
+Berarti model matematika dari sebuah sistem physical yang berupa kumpulan input, output dan variabel *states.*
+
+State Space mengarah ke ruang yang sumbunya merupakan variabel *states*.
+
+States dari sistem bisa direpresentasikan sebagai bentuk *tree* atau *vertex* dalam *directed graph*
+
+State space terdiri dari :
+	- Kumpulan states yang *finite*.
+	- Start state dari permasalahan
+	- Goal states atau solusi dari permasalahan
+	- Kumpulan operator
+
+## State Space Search
+- SSS bisa diterapkan untuk berbagai macam permasalahan, contohnya:
+	- Puzzle solving
+	- Jarak terpendek
+	- Pathfinding
+- SSS dapat dideskripsikan sebagai proses untuk menemukan urutan state untuk mencapai goal state nya.
+- Permasalahannya terletak pada bagaimana cara kita menemukan urutan dari state tersebut dari start state yang diberikan.
+- SSS dapat direpresentasikan sebagai *directed graph* atau sebuah *tree*

@@ -23,3 +23,58 @@
   7. Software Repository
       - Berupa Dokumentasi baik bagi eksternal ataupun internal.
       - Untuk dokumentasi internal umumnya lebih baik berupa *comment*, sedangkan untuk eksternal biasanya berupa model seperti *data dictionary*, *erd*, *dfd*.
+
+# Pertemuan 2, 30 September 2024
+
+# Pertemuan 3, 3 Oktober 2024
+
+## SPE (Specified, Problem, Evolving)
+- S-type (Specified) programs memiliki karakteristik sebagai berikut:
+	- Semua properti program yang non-fungsional ataupun yang fungsional, yang penting bagi *stakeholders* di definisikan secara formal.
+	- Ketepatan program dengan mematuhi spesifikasinya hanyalah kriteria yang dapat diterima sebagai solusi bagi *stakeholders*
+	- Problemnya jelas, langkahnya jelas dan tidak berevolusi
+- P-type (Problem) program yang dibuat untuk menyelesaikan sebuah permasalahan. 
+	- Contohnya adalah : program yang dapat menyelesaikan catur.
+	- Jenis program yang dihasilkan dari perubahan ini tidak dapat dianggap sebagai solusi dari sebuah masalah baru, tapi hanya bisa dianggap sebagai modifikasi dari solusi yang sudah ada. Namun yang dapat terjadi adalah, dunia berubah sehingga problemnya juga berubah.
+	- Berbeda dengan S-type, jenis program ini akan berevolusi.
+- E-type (Evolving)
+	-  Dimana program ini akan berubah sesuai kebutuhan, apabila kebutuhan berubah maka program juga akan ikut berubah.
+	- Berbeda dengan P-type, requirements dari E-type akan terus berubah, dan dari sini maka program jenis ini pasti akan berevolusi.
+## Laws of Software Evolution
+
+| Law Number |                Names of the Laws                |                                                                                                                                       Descriptions                                                                                                                                        |
+| :--------: | :---------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|     I      |            Continuing Change (1974)             |                                                                                               E-type programs must be continually adapted, else they become progressively less satisfactory                                                                                               |
+|     II     |          Increasing Complexity (1974)           |                                                                                           As an E-type program evolves, its complexity increases unless work is done to maintain or reduce it.                                                                                            |
+|    III     |             Self Regulation (1974)              |                                         The evolution process of E-type programs is self-regulating, with the time distribution of measures of process and products being close to normal. (Update dilakukan berkala dan umumnya sedikit-sedikit)                                         |
+|     IV     | Conservation of organizational stability (1978) | The average effective global activity rate in an evolving E-type program is invariant over the product's lifetime. (Evolusi software erat hubungannya dengan developer yang bekerja di organisasi tersebut, semaking stabil sebuah organisasi maka proses evolusinya juga semakin rendah) |
+|     V      |       Conservation of familiarity (1978)        |                                                                                        The average content of successive releases is constant during the life-cycle of an evolving E-type program                                                                                         |
+|     VI     |            Continuing growth (1991)             |                                                                       To maintain user satisfaction with the program over its lifetime, the functional content of an E-type program must be continually increased.                                                                        |
+|    VII     |            Declining Quality (1996)             |                                                                           An E-type program is perceived by its stakeholders to have declining quality if it is not maintained and adapted to its environment.                                                                            |
+|    VIII    |          Feedback system (1971 - 1996)          |                                                                                        The evolution processes in E-type programs constitute multi-agent, multi-level, multi-loop feedback systems                                                                                        |
+
+Hukum 4,5,6,8 erat hubungannya dengan organisasi yang menggunakan software, sementara hukum 1, 2,3,7 erat hubungannya dengan software itu sendiri
+
+## Declining Quality
+- Sebuah program E-type dianggap kualitasnya menurun apabila tidak di *maintain* dan diadaptasikan dengan lingkungannya.
+- Hal hal itu bisa dilihat dari:
+	- Terdapat penurunan kepuasan yang signifikan karena entropi yang terus bertumbuh, makin banyaknya error, dll.
+	- Faktor diatas juga menyebabkan penurunan kualitas dari perspektif user.
+	- Penurunan kualitas seiring berjalannya waktu berhubungan dengan pertumbuhan entropi yang sering diasosiasikan dengan *code decay*
+	- Maka dari itu, penting untuk melakukan tindakan preventif untuk menurunkan entropi dengan cara memperbaiki arsitektur dari software, high-level dan low-level design, dan coding.
+### Code Decay
+- Berhubungan dengan hukum ke 7 Lehmann, sebuah code dikatakan sudah membusuk apabila ketika code tersebut sudah sangat sulit untuk diubah yang ditunjukkan dengan 3 respon:
+	1. The cost of change, which is effective only on the personnel cost for the developers who implement it.
+	2. The calendar or clock time to make the changes; and
+	3. The quality of the changed software
+- Penting untuk dicatat bahwa *code decay* merupakan kebalikan atau antithesis dari evolusi, dengan artian evolusi berusaha membuat code menjadi lebih baik, perubahan umumnya bersifat degeneratif yang mengarah pada code decay.
+
+## Evolusi dari Sistem FOSS (Free Open Source Software)
+- Terdapat perbedaan utama dari evolusi software FOSS dan COTS (Commercial off the shelf), dan dapat dibedakan dari:
+	1. Team structure
+	2. Process
+	3. Releases
+	4. Global Factors
+- Contoh dari FOSS seperti: Linux (Diciptakan oleh **Linus Benedict Torvald**)
+- Contoh dari COTS seperti: Windows, OS X
+

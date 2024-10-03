@@ -185,3 +185,24 @@
 - Seorang *Software Developer* perlu mengalokasi waktu yang cukup untuk melakukan testing dalam siklus **SDLC**.
 - Testing sebaiknya dilakukan seawal mungkin.
 - Sebaiknya melakukan White-box dan Black-box testing dalam tahap siklus **SDLC**.
+
+# Pertemuan 3, 1 Oktober 2024
+
+## White-box testing
+- Dikenal juga sebagai Structural / Glass Box / Clear Box testing.
+- Tujuannya adalah untuk menguji semua statement program.
+
+### Basis Path Testing
+- Step by step:
+  1. Menggambar flow graph.
+  2. Menghitung *cyclomatic complexity* nya.
+  3. Menentukan *independent path* nya.
+  4. Derive the test cases to exercise those paths.
+- Flow Graph:
+  Notasi yang dipakai hanya ada 2 yaitu, *node* dan *flow*.
+- Cyclomatic Complexity / V(G) dihitung dengan salah satu dari tiga cara:
+  - V(G) = **Jumlah daerah tertutup sebuah flow graph** + 1.
+  - V(G) = E - N + 2
+    Dimana E adalah jumlah dari *edges* dan N adalah jumlah dari *nodes* di dalam sebuah flow graph.
+  - V(G) = P + 1
+    Dimana P adalah jumlah *nodes* predikat (output dari node yang outputnya lebih dari 1) di dalam flow graph.
