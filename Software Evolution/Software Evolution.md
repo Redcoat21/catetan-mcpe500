@@ -38,7 +38,7 @@
 	- Jenis program yang dihasilkan dari perubahan ini tidak dapat dianggap sebagai solusi dari sebuah masalah baru, tapi hanya bisa dianggap sebagai modifikasi dari solusi yang sudah ada. Namun yang dapat terjadi adalah, dunia berubah sehingga problemnya juga berubah.
 	- Berbeda dengan S-type, jenis program ini akan berevolusi.
 - E-type (Evolving)
-	-  Dimana program ini akan berubah sesuai kebutuhan, apabila kebutuhan berubah maka program juga akan ikut berubah.
+	- Dimana program ini akan berubah sesuai kebutuhan, apabila kebutuhan berubah maka program juga akan ikut berubah.
 	- Berbeda dengan P-type, requirements dari E-type akan terus berubah, dan dari sini maka program jenis ini pasti akan berevolusi.
 ## Laws of Software Evolution
 
@@ -78,3 +78,51 @@ Hukum 4,5,6,8 erat hubungannya dengan organisasi yang menggunakan software, seme
 - Contoh dari FOSS seperti: Linux (Diciptakan oleh **Linus Benedict Torvald**)
 - Contoh dari COTS seperti: Windows, OS X
 
+# Pertemuan 4,  7 Oktober 2024
+
+## Reuse Oriented Model
+- Iterative vs Incremental
+	- Istilah *Iteration* dan *Increment* umumnya digunakan untuk membahas development iterative dan incremental.
+	- *Iteration* menunjukkan bahwa sebuah proses adalah sebuah siklus, maka dari itu artinya aktivitas dari proses akan diulang terus secara terstruktur.
+	- *Iterative* didasarkan dari strategi *scheduling* darimana sebagian waktu disisihkan untuk mengembangkan dan memperbaiki bagian dari sistem yang sedang dibangun.
+	- *Incremental* didasarkan dari strategi *staging* dan *scheduling* yang dimana bagian dari sistem akan dikembangkan dalam waktu yang berbeda, lalu diintegrasikan ketika sudah selesai.
+- Cohesion dan Coupling
+	- Coupling artinya ketergantungan antar modul, contoh sederhanaya adalah *global variable*.
+
+## The Staged Model For CSS
+- Rajlich dan Bennet pernah mempresentasikan model yang deskriptif soal *software evolution* yang disebut dengan **staged model of maintenance and evolution**.
+- Tujuan utamanya adalah untuk mengembangkan pemahaman akan seberapa lama sebuah software berevolusi, dan bukan untuk membantu dalam manajemen.
+- Modelnya dibagi menjadi 4 fase yaitu:
+	- **Initial Development**
+		- Saat pertamakali membuat software.
+	- **Evolution**
+		- Saat sebuah software ditambahkan fitur fitur.
+	- **Servicing** 
+		- Saat software sudah hampir mencapai akhir hidupnya, karena kebanyakan orang yang mengerti soal program ini sudah pergi.
+		- *Software Re-engineering* umumnya mulai dilakukan dalam tahap ini.
+	- **Phase out**
+		- Saat software mulai ditinggalkan atau di buat ulang, karena biaya maintenance yang terlalu besar atau para *maintainer* sudah pergi semua.
+		- Hasil akhirnya adalah software ini akan di *shut down*.
+	[[Staged Model For CSS.canvas|Staged Model For CSS]]
+
+## The Staged Model For FLOSS
+- Secara umum, perbedaan dari FLOSS dan CSS adalah semua orang bisa menjadi developer dalam FLOSS, developer FLOSS yang lama akan terus digantikan oleh orang yang baru, maka dari itu dalam siklus FLOSS tahap *Phaseout* bisa transisi ke fase *Evolution*.
+
+## Software Configuration Management
+- Software Configuration Management (SCM) dibuat untuk mengatur perubahan dalam sebuah sistem yang besar.
+- Analoginya adalah seperti: Ketika sebuah software sedang dibuat perubahan, software yang sudah di-*deploy* saat ini tidak boleh berhenti.
+- Tujuan dari SCM adalah:
+	- Mengidentifikasi setiap versi dari setiap software pada titik waktu tertentu.
+	- Tetap memiliki versi software yang lama dan dokumentasi yang lama.
+	- Memberikan jejak audit dari setiap perubahan yang dilakukan.
+	- Sepanjang software life-cycle, merawat integritas dan *traceability* dari perubahan sistem.
+- SCM diberlakukan pada software artifact yang meliputi *Executeable Software*, *Source code*, *Hardware* dan *Disks*.
+
+## SCM Spectrum of Functionality
+- Version Control
+	- Untuk menghindari kebingungan ketika proses dari evolusi artifak, sebuah *identifier* dibuat dan dibagikan ke artifak setiap kali artifak tersebut diubah.
+	- Ide dasar dari Version Control adalah memiliki 2 versi file, master dan working copies, dimana master copies akan disimpan dalam repository utama.
+	- Software Developer *check out* working copies dari repositori, lalu mengubah working copies, dan akhirnya kalau sudah selesah *check in* working copies ke repository.
+	- *Checking in* artinya *commit* perubahan dari working copies.
+- *Conflicts* dapat muncul ketika banyak software developer ingin menggunakan file dengan versi yang sama.
+- *Conflicts* dapat diselesaikan dengan 2 cara, yaitu: *lock-modify-unlock* dan *copy-modify-merge*.

@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"18403f4982f468c2","x":-550,"y":-200,"width":250,"height":60,"type":"text","text":"Initial Development"},
+		{"id":"d5bd01ddb62309b0","x":-425,"y":-80,"width":250,"height":60,"type":"text","text":"Evolution"},
+		{"id":"caa7a6085ae713b6","x":-300,"y":40,"width":250,"height":60,"type":"text","text":"Servicing"},
+		{"id":"2834b7c433eeb817","x":-175,"y":153,"width":250,"height":50,"type":"text","text":"Phaseout"},
+		{"id":"d453540a91ac6837","x":-50,"y":260,"width":250,"height":60,"type":"text","text":"Closedown"},
+		{"id":"218d15e1144b661e","x":0,"y":-20,"width":250,"height":60,"color":"4","type":"text","text":"Servicing Patches"},
+		{"id":"4052654128608457","x":-125,"y":-200,"width":250,"height":60,"color":"4","type":"text","text":"Evolution Changes"}
+	],
+	"edges":[
+		{"id":"b6e6993f2e2b6616","fromNode":"18403f4982f468c2","fromSide":"bottom","toNode":"d5bd01ddb62309b0","toSide":"top"},
+		{"id":"c2bd2853ea8bb6fa","fromNode":"d5bd01ddb62309b0","fromSide":"bottom","toNode":"caa7a6085ae713b6","toSide":"top"},
+		{"id":"98a76de5c0c9aeea","fromNode":"caa7a6085ae713b6","fromSide":"bottom","toNode":"2834b7c433eeb817","toSide":"top"},
+		{"id":"ffe366e5dc82455b","fromNode":"2834b7c433eeb817","fromSide":"bottom","toNode":"d453540a91ac6837","toSide":"top"},
+		{"id":"c0be07fd3373a19a","fromNode":"d5bd01ddb62309b0","fromSide":"right","toNode":"4052654128608457","toSide":"bottom"},
+		{"id":"53e2f47582d0ec16","fromNode":"4052654128608457","fromSide":"top","toNode":"d5bd01ddb62309b0","toSide":"top"},
+		{"id":"64bdbe512dc8ff88","fromNode":"caa7a6085ae713b6","fromSide":"right","toNode":"218d15e1144b661e","toSide":"bottom"},
+		{"id":"3b662ab3e74a3156","fromNode":"218d15e1144b661e","fromSide":"top","toNode":"caa7a6085ae713b6","toSide":"top"}
+	]
+}

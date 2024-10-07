@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "98f439c6da2eef68",
+        "id": "b1821d9010e05a3c",
         "type": "tabs",
         "children": [
           {
-            "id": "92715c1ef6933f7c",
+            "id": "b4a5926de56b705c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 274.5
   },
   "right": {
     "id": "81bce3f908820863",
@@ -146,14 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92715c1ef6933f7c",
+  "active": "b4a5926de56b705c",
   "lastOpenFiles": [
-    "Welcome.md",
     "Untitled.md",
-    "Software Testing/Software Testing.md",
     "Software Evolution/Software Evolution.md",
-    "Artificial Intelligence/Artificial Intelligence.md",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "Software Evolution/Staged Model For CSS.canvas",
     "Software Testing/Minggu 2.md",
+    "Software Testing/Software Testing.md",
+    "Welcome.md",
+    "Artificial Intelligence/Artificial Intelligence.md",
     "Software Testing"
   ]
 }
